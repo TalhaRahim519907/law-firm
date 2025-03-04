@@ -1,22 +1,86 @@
-import React from "react";
+import { useState, useEffect } from "react";
+import image1 from "../../assets/Images/1.jpg";
+import image2 from "../../assets/Images/2.jpg";
+import image3 from "../../assets/Images/3.jpg";
+import image4 from "../../assets/Images/4.jpg";
+import image5 from "../../assets/Images/5.jpg";
+import image6 from "../../assets/Images/6.jpg";
 
-const MainContent = () => {
+const slides = [
+  {
+    image: image1,
+    text: "What makes the firm unique is its equally good experience in both contentious and non-contentious work which is very, very rare in the Pakistani legal market. Unlike other old firms in Pakistan, CLM has kept itself and its staff updated with the technological developments in the legal market in Pakistan.",
+  },
+  {
+    image: image2,
+    text: "They have a very capable and strong team. They are always willing to go the extra mile to facilitate their client. Their in-depth knowledge and rich experience makes them a ‘go to’ practice in Pakistan. Knowledgeable yet polite. A great business partner, who always provide sound advice.",
+  },
+  {
+    image: image3,
+    text: "I have had the opportunity to work with partners and associates in CLM that stand out from the competitors due to their sheer commitment, knowledge, and experience.",
+  },
+  {
+    image: image4,
+    text: "I can’t think of any other firm in the country which has a wider experience in international arbitration than CLM. They have a great pool of talent.",
+  },
+  {
+    image: image5,
+    text: "Cornelius, Lane & Mufti is well known for representing both international and local clients in litigation before the Supreme and High Courts, as well as having expertise in arbitration",
+  },
+  {
+    image: image6,
+    text: "Cornelius, Lane & Mufti is recommended for its experience in joint ventures and commercial contracts work",
+  },
+];
+
+export default function HomePage() {
+  const [currentIndex, setCurrentIndex] = useState(0);
+  const [textIndex, setTextIndex] = useState(0);
+  const [fade, setFade] = useState(false);
+
+  useEffect(() => {
+    setFade(true);
+    setTimeout(() => setTextIndex(currentIndex), 400); // Delays text change slightly
+    setTimeout(() => setFade(false), 500); // Smooth fade effect
+  }, [currentIndex]);
+
   return (
     <div
-      className="flex-1 bg-cover bg-center h-screen home"
-      style={{ backgroundImage: "url('/src/assets/Images/intro.png')" }}
+      className="relative h-screen w-full flex items-center justify-center text-white text-center px-6 transition-all duration-700"
+      style={{
+        backgroundImage: `url(${slides[currentIndex].image})`,
+        backgroundSize: "cover",
+        backgroundPosition: "center",
+      }}
     >
-      <div className="bg-black bg-opacity-50 h-full flex flex-col justify-center items-center text-center text-white">
-        <h1 className="text-7xl font-bold font-sans mb-6">Naveed Ahmad</h1>
-        <p className="mb-8 text-2xl font-sans">
-          Mern Stack Developer - Programmer - Traveller
-        </p>
-        <button className="border-2 border-white font-semi-bold px-10 py-2 rounded-full hover:bg-gray-100 hover:text-black hover:font-bold">
-          Contact Me
-        </button>
+      {/* Overlay */}
+      <div className="absolute inset-0 bg-black bg-opacity-50"></div>
+
+      {/* Centered Text */}
+      <div
+        className={`relative z-10 max-w-2xl transition-opacity duration-500 ${
+          fade ? "opacity-0" : "opacity-100"
+        }`}
+      >
+        <h1 className="text-2xl md:text-3xl text-[rgb(213,179,84)] font-bold  mb-4">
+          <i>{slides[textIndex].text}</i>
+        </h1>
+      </div>
+
+      {/* Navigation Circles */}
+      <div className="absolute bottom-10 flex space-x-4">
+        {slides.map((_, index) => (
+          <button
+            key={index}
+            onClick={() => setCurrentIndex(index)}
+            className={`w-4 h-4 rounded-full border-2 transition-all duration-300 ${
+              currentIndex === index
+                ? "bg-[rgb(213,179,84)] border-white scale-110"
+                : "bg-gray-500 border-gray-400"
+            }`}
+          ></button>
+        ))}
       </div>
     </div>
   );
-};
-
-export default MainContent;
+}
