@@ -1,42 +1,51 @@
+import image1 from "../../assets/Images/E1.jpg";
+import image2 from "../../assets/Images/E2.jpg";
+import image3 from "../../assets/Images/E3.jpg";
+import image4 from "../../assets/Images/E4.jpg";
+import image5 from "../../assets/Images/E5.jpg";
+import image6 from "../../assets/Images/E6.jpg";
+import image7 from "../../assets/Images/E7.jpg";
+import image8 from "../../assets/Images/E8.jpg";
+
 function expertise() {
   const imageData = [
     {
-      src: "../../assets/Images/E1.jpg",
+      src: image1,
       title: "Banking & Finance",
       description: "Read More",
     },
     {
-      src: "../../assets/Images/E2.jpg",
+      src: image2,
       title: "Pojects & Energy",
       description: "Read More",
     },
     {
-      src: "../../assets/Images/E3.jpg",
+      src: image3,
       title: "Corporate & Commercial",
       description: "Read More",
     },
     {
-      src: "../../assets/Images/E4.jpg",
+      src: image4,
       title: "Tax",
       description: "Read More",
     },
     {
-      src: "../../assets/Images/E5.jpg",
+      src: image5,
       title: "Legislative Drafting",
       description: "Read More",
     },
     {
-      src: "../../assets/Images/E6.jpg",
+      src: image6,
       title: "Dispute Resolutions",
       description: "Read More",
     },
     {
-      src: "../../assets/Images/E7.jpg",
+      src: image7,
       title: "Capital Markets",
       description: "Read More",
     },
     {
-      src: "../../assets/Images/E8.jpg",
+      src: image8,
       title: "Real Estate",
       description: "Read More",
     },
@@ -56,7 +65,8 @@ function expertise() {
                 className="relative group overflow-hidden rounded-lg shadow-lg"
               >
                 <img
-                  src={`/src/assets/images/${image.src}`}
+                  // src={`/src/assets/images/${image.src}`}
+                  src={image.src}
                   alt={image.title}
                   className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
                 />
