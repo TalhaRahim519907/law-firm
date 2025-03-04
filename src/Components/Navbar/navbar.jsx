@@ -1,8 +1,13 @@
 import { useState } from "react";
 import { Menu, X } from "lucide-react";
-
+import { FaChevronDown } from "react-icons/fa";
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
+  const [openDropdown, setOpenDropdown] = useState(null);
+
+  const toggleDropdown = (menu) => {
+    setOpenDropdown(openDropdown === menu ? null : menu);
+  };
 
   const toggleMenu = () => {
     setIsOpen(!isOpen);
@@ -127,7 +132,6 @@ const Navbar = () => {
           } transition-transform duration-300 ease-in-out z-50`}
         >
           <div className="p-5 flex justify-between items-center border-b border-gray-700">
-            {/* <h2 className="text-lg font-semibold">Menu</h2> */}
             <button onClick={toggleMenu}>
               <X size={28} />
             </button>
@@ -135,15 +139,128 @@ const Navbar = () => {
 
           {/* Sidebar Links */}
           <ul className="p-5 space-y-4">
-            <li className="hover:text-gray-400 cursor-pointer">Home</li>
-            <li className="hover:text-gray-400 cursor-pointer">About</li>
-            <li className="hover:text-gray-400 cursor-pointer">Lawyers</li>
-            <li className="hover:text-gray-400 cursor-pointer">Expertise</li>
-            <li className="hover:text-gray-400 cursor-pointer">
-              Insight & News
+            <li className="hover:text-[rgb(213,179,84)] cursor-pointer">
+              Home
             </li>
-            <li className="hover:text-gray-400 cursor-pointer">Careers</li>
-            <li className="hover:text-gray-400 cursor-pointer">Contact</li>
+            <li className="hover:text-[rgb(213,179,84)] cursor-pointer">
+              About
+            </li>
+            <li className="cursor-pointer">
+              <div
+                className="flex justify-between items-center hover:text-[rgb(213,179,84)]"
+                onClick={() => toggleDropdown("lawyers")}
+              >
+                <span>Lawyers</span>
+                <FaChevronDown
+                  className={`transition-transform duration-300 ${
+                    openDropdown === "lawyers" ? "rotate-180" : ""
+                  }`}
+                />
+              </div>
+              <div
+                className={`overflow-hidden transition-all duration-700 ease-in-out ${
+                  openDropdown === "lawyers"
+                    ? "max-h-40 opacity-100"
+                    : "max-h-0 opacity-0"
+                }`}
+              >
+                <ul className="ml-4 mt-1 space-y-1">
+                  <li className="cursor-pointer hover:text-[rgb(213,179,84)]">
+                    Partners
+                  </li>
+                  <li className="cursor-pointer hover:text-[rgb(213,179,84)]">
+                    Associates
+                  </li>
+                </ul>
+              </div>
+            </li>
+
+            {/* Expertise Dropdown */}
+            <li className="cursor-pointer">
+              <div
+                className="flex justify-between items-center hover:text-[rgb(213,179,84)]"
+                onClick={() => toggleDropdown("expertise")}
+              >
+                <span>Expertise</span>
+                <FaChevronDown
+                  className={`transition-transform duration-300 ${
+                    openDropdown === "expertise" ? "rotate-180" : ""
+                  }`}
+                />
+              </div>
+              <div
+                className={`overflow-hidden transition-all duration-500 ease-in-out ${
+                  openDropdown === "expertise"
+                    ? "max-h-60 opacity-100"
+                    : "max-h-0 opacity-0"
+                }`}
+              >
+                <ul className="ml-4 mt-1 space-y-1">
+                  <li className="cursor-pointer hover:text-[rgb(213,179,84)]">
+                    Banking & Finance
+                  </li>
+                  <li className="cursor-pointer hover:text-[rgb(213,179,84)]">
+                    Corporate & Commercial
+                  </li>
+                  <li className="cursor-pointer hover:text-[rgb(213,179,84)]">
+                    Capital Markets
+                  </li>
+                  <li className="cursor-pointer hover:text-[rgb(213,179,84)]">
+                    Dispute Resolutions
+                  </li>
+                  <li className="cursor-pointer hover:text-[rgb(213,179,84)]">
+                    Real Estate Development
+                  </li>
+                  <li className="cursor-pointer hover:text-[rgb(213,179,84)]">
+                    Tax
+                  </li>
+                  <li className="cursor-pointer hover:text-[rgb(213,179,84)]">
+                    Legislative Drafting
+                  </li>
+                  <li className="cursor-pointer hover:text-[rgb(213,179,84)]">
+                    Projects And Energy
+                  </li>
+                </ul>
+              </div>
+            </li>
+
+            {/* Insight & News Dropdown */}
+            <li className="cursor-pointer">
+              <div
+                className="flex justify-between items-center hover:text-[rgb(213,179,84)]"
+                onClick={() => toggleDropdown("insight")}
+              >
+                <span>Insight & News</span>
+                <FaChevronDown
+                  className={`transition-transform duration-300 hover:text-[rgb(213,179,84)] ${
+                    openDropdown === "insight" ? "rotate-180" : ""
+                  }`}
+                />
+              </div>
+              <div
+                className={`overflow-hidden transition-all duration-700 ease-in-out ${
+                  openDropdown === "insight"
+                    ? "max-h-40 opacity-100"
+                    : "max-h-0 opacity-0"
+                }`}
+              >
+                <ul className="ml-4 mt-1 space-y-1">
+                  <li className="cursor-pointer hover:text-[rgb(213,179,84)]">
+                    News & Events
+                  </li>
+                  <li className="cursor-pointer hover:text-[rgb(213,179,84)]">
+                    Publications
+                  </li>
+                </ul>
+              </div>
+            </li>
+
+            <li className="hover:text-[rgb(213,179,84)] cursor-pointer">
+              Careers
+            </li>
+            <li className="hover:text-[rgb(213,179,84)] cursor-pointer">
+              Contact
+            </li>
           </ul>
         </div>
 
