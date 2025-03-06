@@ -191,7 +191,7 @@ const Navbar = () => {
               <div
                 className={`overflow-hidden transition-all duration-500 ease-in-out ${
                   openDropdown === "expertise"
-                    ? "max-h-60 opacity-100"
+                    ? "max-h-80 opacity-100"
                     : "max-h-0 opacity-0"
                 }`}
               >
