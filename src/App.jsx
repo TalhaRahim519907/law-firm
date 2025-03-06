@@ -8,10 +8,12 @@ function App() {
   return (
     <div>
       <Navbar />
-      <Home />
-      <Introduction />
-      <Expertise />
-      <Footer />
+      <div>
+        <Home />
+        <Introduction />
+        <Expertise />
+        <Footer />
+      </div>
     </div>
   );
 }

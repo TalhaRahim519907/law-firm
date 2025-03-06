@@ -45,7 +45,7 @@ const Navbar = () => {
           >
             Lawyers
             {/* Dropdown Menu */}
-            <ul className="absolute left-0 top-full mt-3 w-60 bg-[rgb(12,33,55)] shadow-lg opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-opacity duration-300">
+            <ul className="absolute left-0 top-full mt-0 w-60 bg-[rgb(12,33,55)] shadow-lg opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-opacity duration-300">
               <li className="px-4 py-2 text-white text-sm font-medium hover:bg-[rgb(213,179,84)] cursor-pointer">
                 Partners
               </li>
@@ -61,30 +61,30 @@ const Navbar = () => {
           >
             Expertise
             {/* Dropdown Menu */}
-            <ul className="absolute left-0 top-full mt-3 w-60 bg-[rgb(12,33,55)] shadow-lg opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-opacity duration-300">
+            <ul className="absolute left-0 top-full mt-0 w-60 bg-[rgb(12,33,55)] shadow-lg opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-opacity duration-300">
               <li className="px-4 py-2 text-white text-sm font-normal hover:bg-[rgb(213,179,84)] cursor-pointer">
-                Banking and Finance
+                Civil Litigation
               </li>
               <li className="px-4 py-2 text-white text-sm font-normal hover:bg-[rgb(213,179,84)] cursor-pointer">
-                Corporate And Comercial
+                Criminal Litigation
               </li>
               <li className="px-4 py-2 text-white text-sm font-normal hover:bg-[rgb(213,179,84)] cursor-pointer">
-                Capital Markets
+                Family Laws
               </li>
               <li className="px-4 py-2 text-white text-sm font-normal hover:bg-[rgb(213,179,84)] cursor-pointer">
-                Dispute Resolutions
+                Consumer Laws
               </li>
               <li className="px-4 py-2 text-white text-sm font-normal hover:bg-[rgb(213,179,84)] cursor-pointer">
-                Real Estate Development
+                Banking & Finance
               </li>
               <li className="px-4 py-2 text-white text-sm font-normal hover:bg-[rgb(213,179,84)] cursor-pointer">
-                Tax
+                Income & Sales Tax
               </li>
               <li className="px-4 py-2 text-white text-sm font-normal hover:bg-[rgb(213,179,84)] cursor-pointer">
-                Legislative Drafting
+                Trade Mark Registration
               </li>
               <li className="px-4 py-2 text-white text-sm font-normal hover:bg-[rgb(213,179,84)] cursor-pointer">
-                Projects And Energy
+                Company Registration (SECP)
               </li>
             </ul>
           </li>
@@ -95,7 +95,7 @@ const Navbar = () => {
           >
             Insight & News
             {/* Dropdown Menu */}
-            <ul className="absolute left-0 top-full mt-3 w-60 bg-[rgb(12,33,55)] shadow-lg opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-opacity duration-300">
+            <ul className="absolute left-0 top-full mt-0 w-60 bg-[rgb(12,33,55)] shadow-lg opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-opacity duration-300">
               <li className="px-4 py-2 text-white text-sm font-medium hover:bg-[rgb(213,179,84)] cursor-pointer">
                 News & Events
               </li>
@@ -197,28 +197,28 @@ const Navbar = () => {
               >
                 <ul className="ml-4 mt-1 space-y-1">
                   <li className="cursor-pointer hover:text-[rgb(213,179,84)]">
+                    Civil Litigation
+                  </li>
+                  <li className="cursor-pointer hover:text-[rgb(213,179,84)]">
+                    Criminal Litigation
+                  </li>
+                  <li className="cursor-pointer hover:text-[rgb(213,179,84)]">
+                    Family Laws
+                  </li>
+                  <li className="cursor-pointer hover:text-[rgb(213,179,84)]">
+                    Consumers Laws
+                  </li>
+                  <li className="cursor-pointer hover:text-[rgb(213,179,84)]">
                     Banking & Finance
                   </li>
                   <li className="cursor-pointer hover:text-[rgb(213,179,84)]">
-                    Corporate & Commercial
+                    Income & Sales Tax
                   </li>
                   <li className="cursor-pointer hover:text-[rgb(213,179,84)]">
-                    Capital Markets
+                    Trade Mark Registration
                   </li>
                   <li className="cursor-pointer hover:text-[rgb(213,179,84)]">
-                    Dispute Resolutions
-                  </li>
-                  <li className="cursor-pointer hover:text-[rgb(213,179,84)]">
-                    Real Estate Development
-                  </li>
-                  <li className="cursor-pointer hover:text-[rgb(213,179,84)]">
-                    Tax
-                  </li>
-                  <li className="cursor-pointer hover:text-[rgb(213,179,84)]">
-                    Legislative Drafting
-                  </li>
-                  <li className="cursor-pointer hover:text-[rgb(213,179,84)]">
-                    Projects And Energy
+                    Company Registration(SECP)
                   </li>
                 </ul>
               </div>

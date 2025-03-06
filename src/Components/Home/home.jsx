@@ -9,27 +9,27 @@ import image6 from "../../assets/Images/6.jpg";
 const slides = [
   {
     image: image1,
-    text: "What makes the firm unique is its equally good experience in both contentious and non-contentious work which is very, very rare in the Pakistani legal market. Unlike other old firms in Pakistan, CLM has kept itself and its staff updated with the technological developments in the legal market in Pakistan.",
+    text: "What sets LS Legal Consultant and Associates apart is its exceptional expertise in both contentious and non-contentious legal matters a rarity in the Pakistani legal industry. Unlike traditional law firms in the country, LS stays ahead by continuously updating itself and its team with the latest technological advancements in the legal sector.",
   },
   {
     image: image2,
-    text: "They have a very capable and strong team. They are always willing to go the extra mile to facilitate their client. Their in-depth knowledge and rich experience makes them a ‘go to’ practice in Pakistan. Knowledgeable yet polite. A great business partner, who always provide sound advice.",
+    text: "LS Legal Consultant and Associates boasts a highly skilled and dedicated team that consistently goes above and beyond to support its clients. Their extensive knowledge and vast experience make them a trusted choice in Pakistan’s legal industry. They are not only well-informed but also courteous, making them a reliable business partner who always offers sound and strategic advice.",
   },
   {
     image: image3,
-    text: "I have had the opportunity to work with partners and associates in CLM that stand out from the competitors due to their sheer commitment, knowledge, and experience.",
+    text: "I have had the privilege of collaborating with the partners and associates at LS, who set themselves apart from competitors through their exceptional dedication, expertise, and extensive experience.",
   },
   {
     image: image4,
-    text: "I can’t think of any other firm in the country which has a wider experience in international arbitration than CLM. They have a great pool of talent.",
+    text: "I can't think of any other firm in the country with more extensive experience in international arbitration than LS. They boast a highly talented team.",
   },
   {
     image: image5,
-    text: "Cornelius, Lane & Mufti is well known for representing both international and local clients in litigation before the Supreme and High Courts, as well as having expertise in arbitration",
+    text: "LS Legal Consultant and Associates is renowned for advocating on behalf of both international and local clients in litigation before the Supreme and High Courts, while also possessing extensive expertise in arbitration.",
   },
   {
     image: image6,
-    text: "Cornelius, Lane & Mufti is recommended for its experience in joint ventures and commercial contracts work",
+    text: "LS Legal Consultant and Associates is highly regarded for its expertise in joint ventures and commercial contract matters.",
   },
 ];
 
@@ -43,6 +43,14 @@ export default function HomePage() {
     setTimeout(() => setTextIndex(currentIndex), 400); // Delays text change slightly
     setTimeout(() => setFade(false), 500); // Smooth fade effect
   }, [currentIndex]);
+
+  useEffect(() => {
+    const interval = setInterval(() => {
+      setCurrentIndex((prevIndex) => (prevIndex + 1) % slides.length);
+    }, 4000); // Change image every 10 seconds
+
+    return () => clearInterval(interval);
+  }, []);
 
   return (
     <div

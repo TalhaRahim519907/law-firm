@@ -9,8 +9,8 @@ const Footer = () => {
           <h3 className="text-2xl font-semibold mb-2">ISLAMABAD OFFICE</h3>
           <div className="w-16 h-1 bg-[rgb(213,179,84)] mt-2 mb-6"></div>
           <p className="flex items-center gap-2 mb-4">
-            <FaMapMarkerAlt size={25} color="rgb(213,179,84)" />
-            Alaf Arcade near Judicial Complex G-10 Islamabad
+            <FaMapMarkerAlt size={30} color="rgb(213,179,84)" />
+            Elaf Arcade near Judicial Complex G-10 Islamabad
           </p>
           <p className="flex items-center gap-2 mb-4">
             <FaEnvelope size={20} color="rgb(213,179,84)" />{" "}
@@ -26,7 +26,7 @@ const Footer = () => {
           <h3 className="text-2xl font-semibold mb-2">RAWALPINDI OFFICE</h3>
           <div className="w-16 h-1 bg-[rgb(213,179,84)] mt-2 mb-6"></div>
           <p className="flex items-center gap-2 mb-4">
-            <FaMapMarkerAlt size={40} color="rgb(213,179,84)" />
+            <FaMapMarkerAlt size={35} color="rgb(213,179,84)" />
             310 , 2nd Floor , Sardar Ijaz Ishaq Khan Block District Courts
             Rawalpindi
           </p>
@@ -44,7 +44,7 @@ const Footer = () => {
           <h3 className="text-2xl font-semibold mb-2">LAHORE OFFICE</h3>
           <div className="w-16 h-1 bg-[rgb(213,179,84)] mt-2 mb-6"></div>
           <p className="flex items-center gap-2 mb-4">
-            <FaMapMarkerAlt size={30} color="rgb(213,179,84)" />
+            <FaMapMarkerAlt size={25} color="rgb(213,179,84)" />
             Bashir Mansion 1-Turner Road Lshore
           </p>
           <p className="flex items-center gap-2 mb-4">
@@ -62,14 +62,14 @@ const Footer = () => {
           <div className="w-16 h-1 bg-[rgb(213,179,84)] mt-2 mb-6"></div>
           <ul>
             {[
-              "Banking and Finance",
-              "Corporate And Comercial",
-              "Capital Markets",
-              "Dispute Resolutions",
-              "Real Estate Development",
-              "Tax",
-              "Legislative Drafting",
-              "Projects And Energy",
+              "Civil litigation",
+              "Criminal Litigation",
+              "Family Laws",
+              "Consumer Laws",
+              "Banking & Finance",
+              "Income & Sales Tax",
+              "Trade Mark Registration",
+              "Company Registration (SECP)",
             ].map((item, index) => (
               <li
                 key={index}

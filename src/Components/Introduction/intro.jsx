@@ -3,7 +3,7 @@ const intro = () => {
     <div className="p-6 mx-6">
       <h2 className="text-lg font-semibold text-gray-500">ABOUT US</h2>
       <h3 className="text-2xl text-[rgb(12,33,55)] font-bold font-sans mt-2 mb-0">
-        Introduction to LA LEGAL CONSULTANTS
+        Introduction to LS LEGAL CONSULTANTS
       </h3>
       <div className="w-28 h-1 bg-[rgb(213,179,84)] mt-3 mb-5"></div>
       <p className="mb-4">

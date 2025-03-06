@@ -11,42 +11,42 @@ function expertise() {
   const imageData = [
     {
       src: image1,
-      title: "Banking & Finance",
+      title: "Civil Litigation",
       description: "Read More",
     },
     {
       src: image2,
-      title: "Pojects & Energy",
+      title: "Criminal Litigation",
       description: "Read More",
     },
     {
       src: image3,
-      title: "Corporate & Commercial",
+      title: "Family Laws",
       description: "Read More",
     },
     {
       src: image4,
-      title: "Tax",
+      title: "Consumer Laws",
       description: "Read More",
     },
     {
       src: image5,
-      title: "Legislative Drafting",
+      title: "Banking & Finance",
       description: "Read More",
     },
     {
       src: image6,
-      title: "Dispute Resolutions",
+      title: "Income & Sales Tax",
       description: "Read More",
     },
     {
       src: image7,
-      title: "Capital Markets",
+      title: "Trade Mark Registration",
       description: "Read More",
     },
     {
       src: image8,
-      title: "Real Estate",
+      title: "Company Registration (SECP)e",
       description: "Read More",
     },
   ];
