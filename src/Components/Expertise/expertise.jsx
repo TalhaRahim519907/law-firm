@@ -46,7 +46,7 @@ function expertise() {
     },
     {
       src: image8,
-      title: "Company Registration (SECP)e",
+      title: "Company Registration (SECP)",
       description: "Read More",
     },
   ];

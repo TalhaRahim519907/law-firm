@@ -45,7 +45,7 @@ const Footer = () => {
           <div className="w-16 h-1 bg-[rgb(213,179,84)] mt-2 mb-6"></div>
           <p className="flex items-center gap-2 mb-4">
             <FaMapMarkerAlt size={20} color="rgb(213,179,84)" />
-            Bashir Mansion 1-Turner Road Lshore
+            Bashir Mansion 1-Turner Road Lahore
           </p>
           <p className="flex items-center gap-2 mb-4">
             <FaEnvelope size={20} color="rgb(213,179,84)" />{" "}

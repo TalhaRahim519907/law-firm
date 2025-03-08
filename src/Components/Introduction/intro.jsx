@@ -7,14 +7,14 @@ const intro = () => {
       </h3>
       <div className="w-28 h-1 bg-[rgb(213,179,84)] mt-3 mb-5"></div>
       <p className="mb-4">
-        LA LEGAL CONSULTANTS is a premier law firm dedicated to providing expert
-        legal solutions. Our team of experienced professionals specializes in
-        various legal fields, ensuring comprehensive support for our clients.
-        With years of expertise and a strong reputation in the legal industry,
-        we are committed to delivering reliable and results-driven legal
-        services. Our goal is to provide sound legal advice and strategic
-        guidance to help our clients navigate complex legal matters with
-        confidence and ease.
+        LS LEGAL CONSULTANTS & ASSOCIATES is a premier law firm dedicated to
+        providing expert legal solutions. Our team of experienced professionals
+        specializes in various legal fields, ensuring comprehensive support for
+        our clients. With years of expertise and a strong reputation in the
+        legal industry, we are committed to delivering reliable and
+        results-driven legal services. Our goal is to provide sound legal advice
+        and strategic guidance to help our clients navigate complex legal
+        matters with confidence and ease.
       </p>
       <p className="mb-4">
         We pride ourselves on our commitment to excellence and integrity. With a

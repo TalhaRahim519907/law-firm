@@ -1,7 +1,10 @@
 import { useState } from "react";
 import { Menu, X } from "lucide-react";
 import { FaChevronDown } from "react-icons/fa";
+import { useNavigate } from "react-router-dom";
+
 const Navbar = () => {
+  const navigate = useNavigate();
   const [isOpen, setIsOpen] = useState(false);
   const [openDropdown, setOpenDropdown] = useState(null);
 
@@ -27,6 +30,7 @@ const Navbar = () => {
             className="relative hover:text-[rgb(213,179,84)] font-bold font-serif transition-colors duration-300 cursor-pointer 
                        before:content-[''] before:absolute before:left-1/2 before:bottom-[-3px] before:w-0 before:h-[3px] 
                      before:bg-[rgb(213,179,84)] before:transition-all before:duration-300 hover:before:w-[20px]  hover:before:translate-x-[-50%]"
+            onClick={() => navigate("/")}
           >
             Home
           </li>
@@ -35,6 +39,7 @@ const Navbar = () => {
             className="relative hover:text-[rgb(213,179,84)] font-bold font-serif transition-colors duration-300 cursor-pointer 
                        before:content-[''] before:absolute before:left-1/2 before:bottom-[-3px] before:w-0 before:h-[3px] 
                      before:bg-[rgb(213,179,84)] before:transition-all before:duration-300 hover:before:w-[20px]  hover:before:translate-x-[-50%]"
+            onClick={() => navigate("/about")}
           >
             About
           </li>
@@ -46,10 +51,16 @@ const Navbar = () => {
             Lawyers
             {/* Dropdown Menu */}
             <ul className="absolute left-0 top-full mt-0 w-60 bg-[rgb(12,33,55)] shadow-lg opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-opacity duration-300">
-              <li className="px-4 py-2 text-white text-sm font-medium hover:bg-[rgb(213,179,84)] cursor-pointer">
+              <li
+                className="px-4 py-2 text-white text-sm font-medium hover:bg-[rgb(213,179,84)] cursor-pointer"
+                onClick={() => navigate("/partner")}
+              >
                 Partners
               </li>
-              <li className="px-4 py-2 text-white text-sm font-medium hover:bg-[rgb(213,179,84)] cursor-pointer">
+              <li
+                className="px-4 py-2 text-white text-sm font-medium hover:bg-[rgb(213,179,84)] cursor-pointer"
+                onClick={() => navigate("/associate")}
+              >
                 Associates
               </li>
             </ul>
@@ -58,6 +69,7 @@ const Navbar = () => {
             className="group relative hover:text-[rgb(213,179,84)] font-bold font-serif transition-colors duration-300 cursor-pointer 
                  before:content-[''] before:absolute before:left-1/2 before:bottom-[-3px] before:w-0 before:h-[3px] 
                  before:bg-[rgb(213,179,84)] before:transition-all before:duration-300 hover:before:w-[20px] hover:before:translate-x-[-50%]"
+            onClick={() => navigate("/Edetail")}
           >
             Expertise
             {/* Dropdown Menu */}
@@ -96,10 +108,16 @@ const Navbar = () => {
             Insight & News
             {/* Dropdown Menu */}
             <ul className="absolute left-0 top-full mt-0 w-60 bg-[rgb(12,33,55)] shadow-lg opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-opacity duration-300">
-              <li className="px-4 py-2 text-white text-sm font-medium hover:bg-[rgb(213,179,84)] cursor-pointer">
+              <li
+                className="px-4 py-2 text-white text-sm font-medium hover:bg-[rgb(213,179,84)] cursor-pointer"
+                onClick={() => navigate("/news")}
+              >
                 News & Events
               </li>
-              <li className="px-4 py-2 text-white text-sm font-medium hover:bg-[rgb(213,179,84)] cursor-pointer">
+              <li
+                className="px-4 py-2 text-white text-sm font-medium hover:bg-[rgb(213,179,84)] cursor-pointer"
+                onClick={() => navigate("/publication")}
+              >
                 Publications
               </li>
             </ul>
@@ -108,6 +126,7 @@ const Navbar = () => {
             className="relative hover:text-[rgb(213,179,84)] font-bold font-serif transition-colors duration-300 cursor-pointer 
                        before:content-[''] before:absolute before:left-1/2 before:bottom-[-3px] before:w-0 before:h-[3px] 
                      before:bg-[rgb(213,179,84)] before:transition-all before:duration-300 hover:before:w-[20px]  hover:before:translate-x-[-50%]"
+            onClick={() => navigate("/career")}
           >
             Careers
           </li>
@@ -115,6 +134,7 @@ const Navbar = () => {
             className="relative hover:text-[rgb(213,179,84)] font-bold font-serif transition-colors duration-300 cursor-pointer 
                        before:content-[''] before:absolute before:left-1/2 before:bottom-[-3px] before:w-0 before:h-[3px] 
                      before:bg-[rgb(213,179,84)] before:transition-all before:duration-300 hover:before:w-[20px]  hover:before:translate-x-[-50%]"
+            onClick={() => navigate("/contact")}
           >
             Contact
           </li>
