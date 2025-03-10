@@ -1,5 +1,5 @@
 import { FaEnvelope, FaPhone, FaFax } from "react-icons/fa";
-import image2 from "../../assets/Images/2.jpg"; // Import B2.jpeg
+import image2 from "../../assets/Images/77.jpg"; // Import B2.jpeg
 import Navbar from "../Navbar/navbar.jsx";
 import Footer from "../Footer/footer.jsx";
 
@@ -44,7 +44,7 @@ const ContactUs = () => {
       >
         <div className="absolute inset-0 bg-black bg-opacity-50 flex items-center p-8">
           <h2 className="text-white text-4xl font-bold font-serif">
-            ContactUs
+            Contact Us
           </h2>
         </div>
       </div>

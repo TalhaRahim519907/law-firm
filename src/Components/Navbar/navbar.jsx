@@ -2,6 +2,7 @@ import { useState } from "react";
 import { Menu, X } from "lucide-react";
 import { FaChevronDown } from "react-icons/fa";
 import { useNavigate } from "react-router-dom";
+// import logo from "../../assets/Images/LS2.png";
 
 const Navbar = () => {
   const navigate = useNavigate();
@@ -23,6 +24,9 @@ const Navbar = () => {
         <h1 className="text-2xl text-[rgb(213,179,84)] transition-colors duration-300 font-bold font-serif cursor-pointer">
           LS LEGAL CONSULTANTS
         </h1>
+        {/* <div className="cursor-pointer w-52" onClick={() => navigate("/")}>
+          <img src={logo} alt="Logo" className="h-16 w-auto" />
+        </div> */}
 
         {/* Desktop Menu */}
         <ul className="hidden md:flex space-x-6">

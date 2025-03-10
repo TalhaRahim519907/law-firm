@@ -6,7 +6,7 @@ const intro = () => {
         Introduction to LS LEGAL CONSULTANTS
       </h3>
       <div className="w-28 h-1 bg-[rgb(213,179,84)] mt-3 mb-5"></div>
-      <p className="mb-4">
+      <p className="mb-4 text-justify">
         LS LEGAL CONSULTANTS & ASSOCIATES is a premier law firm dedicated to
         providing expert legal solutions. Our team of experienced professionals
         specializes in various legal fields, ensuring comprehensive support for
@@ -16,7 +16,7 @@ const intro = () => {
         and strategic guidance to help our clients navigate complex legal
         matters with confidence and ease.
       </p>
-      <p className="mb-4">
+      <p className="mb-4 text-justify">
         We pride ourselves on our commitment to excellence and integrity. With a
         client-centric approach, we strive to deliver personalized legal
         services that meet the unique needs of each individual and business we
@@ -24,7 +24,7 @@ const intro = () => {
         challenges faced by our clients and tailors solutions that best fit
         their circumstances.
       </p>
-      <p>
+      <p className="text-justify">
         Our firm offers a wide range of legal services, including corporate law,
         litigation, intellectual property rights, and more. We aim to provide
         effective legal representation with professionalism and dedication. Our

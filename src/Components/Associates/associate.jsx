@@ -1,58 +1,42 @@
-import image1 from "../../assets/Images/B5.jpeg";
+import image1 from "../../assets/Images/707.webp";
 import Footer from "../Footer/footer.jsx";
 
 const associates = [
   {
-    name: "AHMED ZAFAR",
-    details: [
-      "Admitted to practice in 2023",
-      "LL.B. (Hons.) (University of Westminster)",
-      "Advocate",
-    ],
+    name: "Shahzad Hussain",
+    details: ["Adv. High Court", "0300 8877755"],
   },
   {
-    name: "FAKIR HUSSAIN RANA",
-    details: [
-      "Admitted to practice in 2002",
-      "LL.B. (Punjab)",
-      "Advocate High Court",
-    ],
+    name: "Hafiz M. Afif Bashir CH.",
+    details: ["Adv. High Court", "0300 7716445"],
   },
   {
-    name: "MIRZA ABBAS BAIG",
-    details: [
-      "Admitted to practice in 1975",
-      "M.A., LL.B. (Punjab)",
-      "Advocate High Court",
-    ],
+    name: "M. Bilal Zafar CH.",
+    details: ["Adv. High Court", "0300 7777207"],
   },
   {
-    name: "AIEMA HUSAIN",
-    details: [
-      "Admitted to practice in 2023",
-      "B. A. LL.B. (Hons.) (LUMS)",
-      "Advocate",
-    ],
+    name: "Mian Mohsin Shabbir",
+    details: ["Adv. High Court", "0307 4915959"],
   },
   {
-    name: "HASEEB ZIA SYED",
-    details: [
-      "Admitted to practice in 2018",
-      "LL.B. (Hons.) (University of Hertfordshire, UK)",
-      "LL.M (City, University of London, UK)",
-    ],
+    name: "M. Ahsan Majid",
+    details: ["Adv. High Court", "0323 7716445"],
   },
   {
-    name: "MUHAMMAD HAMEED BAKHSH",
-    details: [
-      "Admitted to practice in 2011",
-      "BA-LL.B. (LUMS)",
-      "Advocate High Court",
-    ],
+    name: "M. Fahad",
+    details: ["Adv. High Court", "0332 3976102"],
   },
   {
-    name: "MUHAMMAD YAHYA",
-    details: ["Admitted to practice in 2022", "LL.B. (Hons.) (London)"],
+    name: "Habib Sadiq CH.",
+    details: ["Advocate", "0308 5539393"],
+  },
+  {
+    name: "Rana Ahmad Ali",
+    details: ["Adv. High Court", "0306 6654727"],
+  },
+  {
+    name: "Rana M. Umar Farooq",
+    details: ["Adv. High Court", "0345 4877328"],
   },
 ];
 
@@ -67,12 +51,14 @@ const Associates = () => {
         }}
       >
         <div className="absolute inset-0 bg-black bg-opacity-50 flex items-center p-8">
-          <h2 className="text-4xl font-bold">LS Consultant Associates</h2>
+          <h2 className="text-4xl font-bold font-serif">
+            LS Consultant Associates
+          </h2>
         </div>
       </div>
 
       {/* Associates List */}
-      <div className="max-w-6xl mx-auto px-6 my-16 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+      <div className="max-w-6xl mx-auto px-6 my-12 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
         {associates.map((associate, index) => (
           <div key={index} className="text-black">
             <h3 className="font-bold text-lg text-[rgb(12,33,55)]">

@@ -1,6 +1,6 @@
 import image1 from "../../assets/Images/book.jpg";
 // import image1 from "../../assets/Images/B5.jpeg";
-import image2 from "../../assets/Images/2.jpg"; // Import B2.jpeg
+import image2 from "../../assets/Images/44.jpg"; // Import B2.jpeg
 import Navbar from "../Navbar/navbar.jsx";
 import Footer from "../Footer/footer.jsx";
 

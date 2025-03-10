@@ -1,5 +1,5 @@
 import { useState } from "react";
-import image2 from "../../assets/Images/2.jpg"; // Import B2.jpeg
+import image2 from "../../assets/Images/66.webp"; // Import B2.jpeg
 import Navbar from "../Navbar/navbar.jsx";
 import Footer from "../Footer/footer.jsx";
 
@@ -37,7 +37,7 @@ const Careers = () => {
           backgroundImage: `url(${image2})`, // Background image for the hero section
         }}
       >
-        <div className="absolute inset-0 bg-black bg-opacity-50 flex items-center p-8">
+        <div className="absolute inset-0 bg-black bg-opacity-50 flex items-center py-8 px-12">
           <h2 className="text-white text-4xl font-bold font-serif">Careers</h2>
         </div>
       </div>

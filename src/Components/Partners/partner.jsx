@@ -1,65 +1,42 @@
-import image1 from "../../assets/Images/B5.jpeg";
+import image1 from "../../assets/Images/705.jpg";
 import Footer from "../Footer/footer.jsx";
 
 const partners = [
   {
-    name: "Afzal H. Mufti",
-    details: [
-      "Admitted to practice in 1965.",
-      "M.A. (Oxon)",
-      "B.A. Hons. (Jurisprudence), Oxon",
-      "B.A., LL.B. (Punjab)",
-      "Pakistan Rhodes Scholar (1967)",
-      "Advocate Supreme Court of Pakistan",
-    ],
+    name: "Shahzad Hussain",
+    details: ["Adv. High Court", "0300 8877755"],
   },
   {
-    name: "Hamid Khan",
-    details: [
-      "Admitted to practice in 1968.",
-      "LL.M. (Illinois)",
-      "M.A. (Punjab), LL.B. (Punjab)",
-      "Senior Advocate, Supreme Court of Pakistan",
-    ],
+    name: "Hafiz M. Afif Bashir CH.",
+    details: ["Adv. High Court", "0300 7716445"],
   },
   {
-    name: "Salman Aslam Butt",
-    details: [
-      "Admitted to practice in 1982.",
-      "B.A., LL.B. (Punjab)",
-      "LL.M. (London)",
-      "Senior Advocate, Supreme Court of Pakistan",
-    ],
+    name: "M. Bilal Zafar CH.",
+    details: ["Adv. High Court", "0300 7777207"],
   },
   {
-    name: "Munawar-us-Salam",
-    details: [
-      "Admitted to practice in 1998.",
-      "B.A. (Punjab), LL.B. (Hons.) (London)",
-      "Post Graduate Diploma in Professional Legal Skills (London)",
-      "Barrister-at-Law (Lincoln’s Inn)",
-      "Advocate Supreme Court of Pakistan",
-    ],
+    name: "Mian Mohsin Shabbir",
+    details: ["Adv. High Court", "0307 4915959"],
   },
   {
-    name: "Shehzad Ata Elahi",
-    details: [
-      "Admitted to practice in 2001.",
-      "LL.B. (Hons.) (London)",
-      "Post Graduate Diploma in Professional Legal Skills (City University)",
-      "Barrister-at-Law (Lincoln’s Inn)",
-      "Advocate Supreme Court of Pakistan",
-    ],
+    name: "M. Ahsan Majid",
+    details: ["Adv. High Court", "0323 7716445"],
   },
   {
-    name: "Waleed Khalid",
-    details: [
-      "Admitted to practice in 2004.",
-      "LL.B. (Hons.) (London)",
-      "Post Graduate Diploma in Professional Legal Studies (BPP, London)",
-      "Barrister-at-Law (Lincoln’s Inn)",
-      "Advocate Supreme Court of Pakistan",
-    ],
+    name: "M. Fahad",
+    details: ["Adv. High Court", "0332 3976102"],
+  },
+  {
+    name: "Habib Sadiq CH.",
+    details: ["Advocate", "0308 5539393"],
+  },
+  {
+    name: "Rana Ahmad Ali",
+    details: ["Adv. High Court", "0306 6654727"],
+  },
+  {
+    name: "Rana M. Umar Farooq",
+    details: ["Adv. High Court", "0345 4877328"],
   },
 ];
 
@@ -74,7 +51,7 @@ const Partners = () => {
         }}
       >
         <div className="absolute inset-0 bg-black bg-opacity-50 flex items-center p-8">
-          <h2 className="text-white text-4xl font-bold font-sans">
+          <h2 className="text-white text-4xl font-bold font-serif">
             LS Consultant Partners
           </h2>
         </div>
@@ -82,7 +59,7 @@ const Partners = () => {
       <div className="container mx-auto flex flex-col md:flex-row px-6 py-10">
         {/* Left Sidebar */}
         <div className="w-full md:w-1/4 p-4">
-          <h2 className="text-2xl text-[rgb(12,33,55)] text-center font-bold mb-4">
+          <h2 className="text-2xl text-[rgb(12,33,55)] text-center font-bold mb-4 font-serif">
             LS CONSULTANT PARTNERS
           </h2>
           <ul className="space-y-2">
@@ -98,10 +75,13 @@ const Partners = () => {
         </div>
 
         {/* Right Partner Cards */}
-        <div className="w-full md:w-3/4 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+        <div className="w-full md:w-3/4 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 ">
           {partners.map((partner, index) => (
-            <div key={index} className="bg-gray-100 p-6 shadow-md ">
-              <h3 className="text-xl font-bold text-[rgb(12,33,55)]">
+            <div
+              key={index}
+              className="bg-gray-100 p-6 shadow-md border-2 border-yellow-300"
+            >
+              <h3 className="text-xl font-bold font-serif text-[rgb(12,33,55)]">
                 {partner.name}
               </h3>
               <ul className="mt-2 text-sm font-medium text-gray-700 list-disc list-inside">
@@ -109,7 +89,7 @@ const Partners = () => {
                   <li key={i}>{detail}</li>
                 ))}
               </ul>
-              <p className="mt-2 text-[rgb(182,150,62)] cursor-pointer">
+              <p className="mt-2 text-[rgb(182,150,62)] cursor-pointer text-sm">
                 View Profile
               </p>
             </div>

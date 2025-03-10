@@ -1,18 +1,18 @@
 import { useState, useEffect } from "react";
-import image2 from "../../assets/Images/B5.jpeg";
+import image2 from "../../assets/Images/55.jpg";
 import Footer from "../Footer/footer.jsx";
 
 // Sample images (replace with actual image paths)
-import slide1 from "../../assets/Images/2.jpg";
-import slide2 from "../../assets/Images/3.jpg";
-import slide3 from "../../assets/Images/4.jpg";
+import slide1 from "../../assets/Images/11.jpg";
+import slide2 from "../../assets/Images/22.jpg";
+import slide3 from "../../assets/Images/706.jpg";
 
-import event1 from "../../assets/Images/E1.jpg";
-import event2 from "../../assets/Images/E2.jpg";
-import event3 from "../../assets/Images/E3.jpg";
-import event4 from "../../assets/Images/E4.jpg";
-import event5 from "../../assets/Images/E5.jpg";
-import event6 from "../../assets/Images/E6.jpg";
+import event1 from "../../assets/Images/G1.webp";
+import event2 from "../../assets/Images/G2.jpg";
+import event3 from "../../assets/Images/G3.jpg";
+import event4 from "../../assets/Images/G4.jpg";
+import event5 from "../../assets/Images/G5.jpg";
+import event6 from "../../assets/Images/G6.jpeg";
 
 // Slider Images Array
 const sliderImages = [slide1, slide2, slide3];
@@ -27,7 +27,7 @@ const NewsEvents = () => {
   useEffect(() => {
     const interval = setInterval(() => {
       setCurrentIndex((prevIndex) => (prevIndex + 1) % sliderImages.length);
-    }, 5000);
+    }, 4000);
 
     return () => clearInterval(interval);
   }, []);
@@ -97,8 +97,8 @@ const NewsEvents = () => {
         </div>
 
         {/* Event Photo Gallery */}
-        <div className="my-6">
-          <h2 className="text-3xl font-bold text-[rgb(12,33,55)] text-center font-sans">
+        <div className="mt-10 mb-6">
+          <h2 className="text-4xl font-bold text-[rgb(12,33,55)] text-center font-serif">
             Event Photo Gallery
           </h2>
 
@@ -108,7 +108,7 @@ const NewsEvents = () => {
                 <img
                   src={image}
                   alt={`Event ${index + 1}`}
-                  className="w-full h-50 cursor-pointer object-cover shadow-md transition duration-300"
+                  className="w-full h-72 cursor-pointer object-cover shadow-md transition duration-300"
                 />
                 {/* Black overlay effect */}
                 <div className="absolute inset-0 bg-black opacity-0 group-hover:opacity-60 transition-opacity duration-300 rounded-lg"></div>

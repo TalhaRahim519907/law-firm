@@ -5,7 +5,7 @@ import image4 from "../../assets/Images/E4.jpg";
 import image5 from "../../assets/Images/E5.jpg";
 import image6 from "../../assets/Images/E6.jpg";
 import image7 from "../../assets/Images/E7.jpg";
-import image8 from "../../assets/Images/E8.jpg";
+import image8 from "../../assets/Images/E9.jpg";
 
 function expertise() {
   const imageData = [
@@ -71,10 +71,10 @@ function expertise() {
                   className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
                 />
                 <div className="absolute inset-0 bg-black bg-opacity-50 flex flex-col items-center justify-center opacity-0 transition-opacity duration-500 group-hover:opacity-100">
-                  <h2 className="text-white text-lg font-bold mb-2">
+                  <h2 className="text-white text-2xl font-bold font-serif mb-2 text-center">
                     {image.title}
                   </h2>
-                  <p className="text-white">{image.description}</p>
+                  <p className="text-white text-sm">{image.description}</p>
                 </div>
               </div>
             ))}

@@ -17,27 +17,29 @@ function App() {
   return (
     <Router>
       <Navbar />
-      <Routes>
-        <Route
-          path="/"
-          element={
-            <>
-              <Home />
-              <Introduction />
-              <Expertise />
-              <Footer />
-            </>
-          }
-        />
-        <Route path="/about" element={<AboutUs />} />
-        <Route path="/partner" element={<Partners />} />
-        <Route path="/associate" element={<Associates />} />
-        <Route path="/Edetail" element={<ExpertiseDetails />} />
-        <Route path="/news" element={<News />} />
-        <Route path="/publication" element={<Publications />} />
-        <Route path="/career" element={<Careers />} />
-        <Route path="/contact" element={<ContactUs />} />
-      </Routes>
+      <div className="pt-16">
+        <Routes>
+          <Route
+            path="/"
+            element={
+              <>
+                <Home />
+                <Introduction />
+                <Expertise />
+                <Footer />
+              </>
+            }
+          />
+          <Route path="/about" element={<AboutUs />} />
+          <Route path="/partner" element={<Partners />} />
+          <Route path="/associate" element={<Associates />} />
+          <Route path="/Edetail" element={<ExpertiseDetails />} />
+          <Route path="/news" element={<News />} />
+          <Route path="/publication" element={<Publications />} />
+          <Route path="/career" element={<Careers />} />
+          <Route path="/contact" element={<ContactUs />} />
+        </Routes>
+      </div>
     </Router>
   );
 }
