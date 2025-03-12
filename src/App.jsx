@@ -34,6 +34,7 @@ function App() {
           <Route path="/partner" element={<Partners />} />
           <Route path="/associate" element={<Associates />} />
           <Route path="/Edetail" element={<ExpertiseDetails />} />
+          <Route path="/expertise/:id" element={<ExpertiseDetails />} />
           <Route path="/news" element={<News />} />
           <Route path="/publication" element={<Publications />} />
           <Route path="/career" element={<Careers />} />

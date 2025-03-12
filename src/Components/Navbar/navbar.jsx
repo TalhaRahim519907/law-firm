@@ -163,10 +163,16 @@ const Navbar = () => {
 
           {/* Sidebar Links */}
           <ul className="p-5 space-y-4">
-            <li className="hover:text-[rgb(213,179,84)] cursor-pointer">
+            <li
+              className="hover:text-[rgb(213,179,84)] cursor-pointer"
+              onClick={() => navigate("/")}
+            >
               Home
             </li>
-            <li className="hover:text-[rgb(213,179,84)] cursor-pointer">
+            <li
+              className="hover:text-[rgb(213,179,84)] cursor-pointer"
+              onClick={() => navigate("/about")}
+            >
               About
             </li>
             <li className="cursor-pointer">
@@ -189,10 +195,16 @@ const Navbar = () => {
                 }`}
               >
                 <ul className="ml-4 mt-1 space-y-1">
-                  <li className="cursor-pointer hover:text-[rgb(213,179,84)]">
+                  <li
+                    className="cursor-pointer hover:text-[rgb(213,179,84)]"
+                    onClick={() => navigate("/partner")}
+                  >
                     Partners
                   </li>
-                  <li className="cursor-pointer hover:text-[rgb(213,179,84)]">
+                  <li
+                    className="cursor-pointer hover:text-[rgb(213,179,84)]"
+                    onClick={() => navigate("/associate")}
+                  >
                     Associates
                   </li>
                 </ul>
@@ -205,7 +217,7 @@ const Navbar = () => {
                 className="flex justify-between items-center hover:text-[rgb(213,179,84)]"
                 onClick={() => toggleDropdown("expertise")}
               >
-                <span>Expertise</span>
+                <span onClick={() => navigate("/Edetail")}>Expertise</span>
                 <FaChevronDown
                   className={`transition-transform duration-300 ${
                     openDropdown === "expertise" ? "rotate-180" : ""
@@ -269,20 +281,32 @@ const Navbar = () => {
                 }`}
               >
                 <ul className="ml-4 mt-1 space-y-1">
-                  <li className="cursor-pointer hover:text-[rgb(213,179,84)]">
+                  <li
+                    className="cursor-pointer hover:text-[rgb(213,179,84)]"
+                    onClick={() => navigate("/news")}
+                  >
                     News & Events
                   </li>
-                  <li className="cursor-pointer hover:text-[rgb(213,179,84)]">
+                  <li
+                    className="cursor-pointer hover:text-[rgb(213,179,84)]"
+                    onClick={() => navigate("/publication")}
+                  >
                     Publications
                   </li>
                 </ul>
               </div>
             </li>
 
-            <li className="hover:text-[rgb(213,179,84)] cursor-pointer">
+            <li
+              className="hover:text-[rgb(213,179,84)] cursor-pointer"
+              onClick={() => navigate("/career")}
+            >
               Careers
             </li>
-            <li className="hover:text-[rgb(213,179,84)] cursor-pointer">
+            <li
+              className="hover:text-[rgb(213,179,84)] cursor-pointer"
+              onClick={() => navigate("/contact")}
+            >
               Contact
             </li>
           </ul>
