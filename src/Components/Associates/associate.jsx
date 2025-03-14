@@ -7,36 +7,36 @@ const associates = [
     details: ["Adv. High Court", "0300 8877755"],
   },
   {
-    name: "Hafiz M. Afif Bashir CH.",
-    details: ["Adv. High Court", "0300 7716445"],
+    name: "M. Ahsan Majid",
+    details: ["Adv. High Court", "0323 7716445"],
+  },
+  {
+    name: "Hafiz M. Atif Bashir CH.",
+    details: ["Adv. High Court", "0300 7295197"],
   },
   {
     name: "M. Bilal Zafar CH.",
     details: ["Adv. High Court", "0300 7777207"],
   },
   {
-    name: "Mian Mohsin Shabbir",
-    details: ["Adv. High Court", "0307 4915959"],
-  },
-  {
-    name: "M. Ahsan Majid",
-    details: ["Adv. High Court", "0323 7716445"],
-  },
-  {
-    name: "M. Fahad",
-    details: ["Adv. High Court", "0332 3976102"],
-  },
-  {
-    name: "Habib Sadiq CH.",
-    details: ["Advocate", "0308 5539393"],
+    name: "Rana M. Umar Farooq",
+    details: ["Adv. High Court", "0345 4877328"],
   },
   {
     name: "Rana Ahmad Ali",
     details: ["Adv. High Court", "0306 6654727"],
   },
   {
-    name: "Rana M. Umar Farooq",
-    details: ["Adv. High Court", "0345 4877328"],
+    name: "Mian Mohsin Shabbir",
+    details: ["Adv. High Court", "0307 4915959"],
+  },
+  {
+    name: "Habib Sadiq CH.",
+    details: ["Advocate", "0308 5539393"],
+  },
+  {
+    name: "M. Fahad",
+    details: ["Adv. High Court", "0332 3976102"],
   },
 ];
 

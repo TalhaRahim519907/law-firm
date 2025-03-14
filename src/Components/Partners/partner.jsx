@@ -3,40 +3,8 @@ import Footer from "../Footer/footer.jsx";
 
 const partners = [
   {
-    name: "Shahzad Hussain",
+    name: "Hafiz Muhammad Bilal Sharif Chaudhary",
     details: ["Adv. High Court", "0300 8877755"],
-  },
-  {
-    name: "Hafiz M. Afif Bashir CH.",
-    details: ["Adv. High Court", "0300 7716445"],
-  },
-  {
-    name: "M. Bilal Zafar CH.",
-    details: ["Adv. High Court", "0300 7777207"],
-  },
-  {
-    name: "Mian Mohsin Shabbir",
-    details: ["Adv. High Court", "0307 4915959"],
-  },
-  {
-    name: "M. Ahsan Majid",
-    details: ["Adv. High Court", "0323 7716445"],
-  },
-  {
-    name: "M. Fahad",
-    details: ["Adv. High Court", "0332 3976102"],
-  },
-  {
-    name: "Habib Sadiq CH.",
-    details: ["Advocate", "0308 5539393"],
-  },
-  {
-    name: "Rana Ahmad Ali",
-    details: ["Adv. High Court", "0306 6654727"],
-  },
-  {
-    name: "Rana M. Umar Farooq",
-    details: ["Adv. High Court", "0345 4877328"],
   },
 ];
 
@@ -56,6 +24,7 @@ const Partners = () => {
           </h2>
         </div>
       </div>
+
       <div className="container mx-auto flex flex-col md:flex-row px-6 py-10">
         {/* Left Sidebar */}
         <div className="w-full md:w-1/4 p-4">
@@ -66,7 +35,7 @@ const Partners = () => {
             {partners.map((partner, index) => (
               <li
                 key={index}
-                className="bg-gray-200 hover:bg-[rgb(213,179,84)] p-3 cursor-pointer text-[rgb(12,33,55)] font-bold"
+                className=" bg-[rgb(213,179,84)] hover:bg-[rgb(240,199,88)] p-3 cursor-pointer text-[rgb(12,33,55)] font-bold font-serif"
               >
                 {partner.name}
               </li>
@@ -74,28 +43,82 @@ const Partners = () => {
           </ul>
         </div>
 
-        {/* Right Partner Cards */}
-        <div className="w-full md:w-3/4 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 ">
-          {partners.map((partner, index) => (
-            <div
-              key={index}
-              className="bg-gray-100 p-6 shadow-md border-2 border-yellow-300"
-            >
-              <h3 className="text-xl font-bold font-serif text-[rgb(12,33,55)]">
-                {partner.name}
-              </h3>
-              <ul className="mt-2 text-sm font-medium text-gray-700 list-disc list-inside">
-                {partner.details.map((detail, i) => (
-                  <li key={i}>{detail}</li>
+        {/* ✅ Updated Right Section */}
+        <div className="w-full md:w-3/4 bg-gray-100 p-8 min-h-screen flex justify-center items-center">
+          <div className="max-w-4xl mx-auto bg-white p-8 shadow-md rounded-lg">
+            <div className="flex flex-col md:flex-row justify-between items-start">
+              {/* Left Section - Text */}
+              <div className="md:w-3/4">
+                {partners.map((partner, index) => (
+                  <h2
+                    key={index}
+                    className="text-3xl font-bold font-serif text-gray-900"
+                  >
+                    {" "}
+                    {partner.name}
+                  </h2>
                 ))}
-              </ul>
-              <p className="mt-2 text-[rgb(182,150,62)] cursor-pointer text-sm">
-                View Profile
-              </p>
+                <hr className="my-4 border-gray-300" />
+                {/* <p className="text-gray-700">Admitted to practice in 1965.</p> */}
+
+                <h2 className="text-xl font-semibold text-gray-900 mt-4">
+                  Qualifications
+                </h2>
+                <ul className="list-disc pl-5 text-gray-700 mt-2 space-y-1">
+                  <li>M.A. (Oxon)</li>
+                  <li>B.A. Hons. (Jurisprudence), Oxon</li>
+                  <li>B.A., L.L.B. (Punjab)</li>
+                  <li>Pakistan Rhodes Scholar (1967)</li>
+                  <li>Advocate Supreme Court of Pakistan</li>
+                </ul>
+
+                <p className="text-gray-700 mt-4">
+                  Visiting Law Lecturer, University of the Punjab from 1969 to
+                  1972 and 1975 to 1979
+                  <br />
+                  Associate Member of the Law Society London
+                  <br />
+                  Associate, Baker and McKenzie, London (1972-1975)
+                  <br />
+                  Legal Counsel, Asian Development Bank, Manila (1980-1988)
+                  <br />
+                  Consultant, Asian Development Bank, since 1988.
+                </p>
+
+                <h2 className="text-xl font-semibold text-gray-900 mt-6">
+                  Expertise
+                </h2>
+                <p className="text-gray-700 mt-2">
+                  Specializing in International Commercial Transactions,
+                  Commercial Credits, Laws relating to Project Finance and
+                  Development Lending; Contracts and Procurement, and Laws of
+                  International Organizations.
+                </p>
+
+                <p className="mt-6 text-gray-900 font-semibold">
+                  Email:{" "}
+                  <a
+                    href="mailto:afzal.mufti@clm.com.pk"
+                    className="text-blue-600 hover:underline"
+                  >
+                    afzal.mufti@clm.com.pk
+                  </a>
+                </p>
+              </div>
+
+              {/* Right Section - Image */}
+              <div className="md:w-1/4 md:ml-6 mt-6 md:mt-0">
+                <img
+                  src="/assets/profile.jpg" // Ensure the image is placed in the public/assets folder
+                  alt="Afzal H. Mufti"
+                  className="w-32 h-40 object-cover rounded-md shadow-md"
+                />
+              </div>
             </div>
-          ))}
+          </div>
         </div>
       </div>
+
       <Footer />
     </div>
   );

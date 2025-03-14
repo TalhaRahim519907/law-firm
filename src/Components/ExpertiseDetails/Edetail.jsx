@@ -1,11 +1,21 @@
-import { useParams } from "react-router-dom";
+import { useParams, useNavigate } from "react-router-dom";
+import { useEffect } from "react";
 import image2 from "../../assets/Images/3.jpg";
 import Footer from "../Footer/footer.jsx";
 import { imageData } from "../Expertise/Imagedata.jsx";
 
 const Edetail = () => {
   const { id } = useParams();
-  const selected = imageData.find((image) => image.id === parseInt(id));
+  const navigate = useNavigate();
+
+  useEffect(() => {
+    if (!id && imageData.length > 0) {
+      navigate(`/expertise/${imageData[0].id}`, { replace: true });
+    }
+  }, [id, navigate]);
+
+  const selected =
+    imageData.find((image) => image.id === parseInt(id)) || imageData[0];
 
   return (
     <div>
@@ -27,7 +37,7 @@ const Edetail = () => {
           <h2 className="text-2xl font-bold font-serif text-[rgb(12,33,55)] mb-4 text-center">
             EXPERTISE
           </h2>
-          <div className="space-y-2">
+          <div className="space-y-4">
             {imageData.map((image) => (
               <a
                 key={image.id}
