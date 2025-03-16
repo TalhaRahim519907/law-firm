@@ -2,6 +2,7 @@ import { useState } from "react";
 import { Menu, X } from "lucide-react";
 import { FaChevronDown } from "react-icons/fa";
 import { useNavigate } from "react-router-dom";
+import { imageData } from "../Expertise/Imagedata.jsx";
 // import logo from "../../assets/Images/LS2.png";
 
 const Navbar = () => {
@@ -77,8 +78,11 @@ const Navbar = () => {
           >
             Expertise
             {/* Dropdown Menu */}
-            <ul className="absolute left-0 top-full mt-0 w-60 bg-[rgb(12,33,55)] shadow-lg opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-opacity duration-300">
-              <li className="px-4 py-2 text-white text-sm font-normal hover:bg-[rgb(213,179,84)] cursor-pointer">
+            {/* <ul className="absolute left-0 top-full mt-0 w-60 bg-[rgb(12,33,55)] shadow-lg opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-opacity duration-300">
+              <li
+                className="px-4 py-2 text-white text-sm font-normal hover:bg-[rgb(213,179,84)] cursor-pointer"
+                onClick={() => navigate(`/expertise/${image.id}`)}
+              >
                 Civil Litigation
               </li>
               <li className="px-4 py-2 text-white text-sm font-normal hover:bg-[rgb(213,179,84)] cursor-pointer">
@@ -102,6 +106,17 @@ const Navbar = () => {
               <li className="px-4 py-2 text-white text-sm font-normal hover:bg-[rgb(213,179,84)] cursor-pointer">
                 Company Registration (SECP)
               </li>
+            </ul> */}
+            <ul className="absolute left-0 top-full mt-0 w-60 bg-[rgb(12,33,55)] shadow-lg opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-opacity duration-300">
+              {imageData.map((image) => (
+                <li
+                  key={image.id}
+                  className="px-4 py-2 text-white text-sm font-normal hover:bg-[rgb(213,179,84)] cursor-pointer"
+                  onClick={() => navigate(`/expertise/${image.id}`)}
+                >
+                  {image.title} {/* Now the correct title will be displayed */}
+                </li>
+              ))}
             </ul>
           </li>
           <li
@@ -232,30 +247,15 @@ const Navbar = () => {
                 }`}
               >
                 <ul className="ml-4 mt-1 space-y-1">
-                  <li className="cursor-pointer hover:text-[rgb(213,179,84)]">
-                    Civil Litigation
-                  </li>
-                  <li className="cursor-pointer hover:text-[rgb(213,179,84)]">
-                    Criminal Litigation
-                  </li>
-                  <li className="cursor-pointer hover:text-[rgb(213,179,84)]">
-                    Family Laws
-                  </li>
-                  <li className="cursor-pointer hover:text-[rgb(213,179,84)]">
-                    Consumers Laws
-                  </li>
-                  <li className="cursor-pointer hover:text-[rgb(213,179,84)]">
-                    Banking & Finance
-                  </li>
-                  <li className="cursor-pointer hover:text-[rgb(213,179,84)]">
-                    Income & Sales Tax
-                  </li>
-                  <li className="cursor-pointer hover:text-[rgb(213,179,84)]">
-                    Trade Mark Registration
-                  </li>
-                  <li className="cursor-pointer hover:text-[rgb(213,179,84)]">
-                    Company Registration(SECP)
-                  </li>
+                  {imageData.map((image) => (
+                    <li
+                      key={image.id}
+                      className="cursor-pointer hover:text-[rgb(213,179,84)]"
+                      onClick={() => navigate(`/expertise/${image.id}`)}
+                    >
+                      {image.title}
+                    </li>
+                  ))}
                 </ul>
               </div>
             </li>

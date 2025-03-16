@@ -3,7 +3,7 @@ import Footer from "../Footer/footer.jsx";
 
 const partners = [
   {
-    name: "Hafiz Muhammad Bilal Sharif Chaudhary",
+    name: "Hafiz Muhammad Bilal Sharif Chaudhery",
     details: ["Adv. High Court", "0300 8877755"],
   },
 ];
@@ -20,7 +20,7 @@ const Partners = () => {
       >
         <div className="absolute inset-0 bg-black bg-opacity-50 flex items-center p-8">
           <h2 className="text-white text-4xl font-bold font-serif">
-            LS Consultant Partners
+            LS Consultants Partners
           </h2>
         </div>
       </div>
@@ -29,7 +29,7 @@ const Partners = () => {
         {/* Left Sidebar */}
         <div className="w-full md:w-1/4 p-4">
           <h2 className="text-2xl text-[rgb(12,33,55)] text-center font-bold mb-4 font-serif">
-            LS CONSULTANT PARTNERS
+            LS CONSULTANTS PARTNERS
           </h2>
           <ul className="space-y-2">
             {partners.map((partner, index) => (
@@ -65,43 +65,33 @@ const Partners = () => {
                   Qualifications
                 </h2>
                 <ul className="list-disc pl-5 text-gray-700 mt-2 space-y-1">
-                  <li>M.A. (Oxon)</li>
-                  <li>B.A. Hons. (Jurisprudence), Oxon</li>
-                  <li>B.A., L.L.B. (Punjab)</li>
-                  <li>Pakistan Rhodes Scholar (1967)</li>
-                  <li>Advocate Supreme Court of Pakistan</li>
+                  <li>LL.M (UOL)</li>
+                  <li>B.A , L.L.B (PU)</li>
+                  <li>Diploma in Taxation (PU)</li>
+                  <li>Navigating Family Law (Alison UK)</li>
                 </ul>
-
-                <p className="text-gray-700 mt-4">
-                  Visiting Law Lecturer, University of the Punjab from 1969 to
-                  1972 and 1975 to 1979
-                  <br />
-                  Associate Member of the Law Society London
-                  <br />
-                  Associate, Baker and McKenzie, London (1972-1975)
-                  <br />
-                  Legal Counsel, Asian Development Bank, Manila (1980-1988)
-                  <br />
-                  Consultant, Asian Development Bank, since 1988.
-                </p>
 
                 <h2 className="text-xl font-semibold text-gray-900 mt-6">
                   Expertise
                 </h2>
                 <p className="text-gray-700 mt-2">
-                  Specializing in International Commercial Transactions,
-                  Commercial Credits, Laws relating to Project Finance and
-                  Development Lending; Contracts and Procurement, and Laws of
-                  International Organizations.
+                  Meet the distinguished Owner of our law firm, who brings
+                  decades of experience and expertise to the table. His
+                  strategic vision and Leadership have established our firm as a
+                  trusted and respected name in the Legal Industry. He holds
+                  ample experience civil litigation , criminal litigation ,
+                  family matters, drafting and arbitration. However if you need
+                  assistance civil matters, criminal matters, family matters etc
+                  you must contact him.
                 </p>
 
                 <p className="mt-6 text-gray-900 font-semibold">
                   Email:{" "}
                   <a
-                    href="mailto:afzal.mufti@clm.com.pk"
+                    href="mailto:lslegalconsultancy@gmail.com"
                     className="text-blue-600 hover:underline"
                   >
-                    afzal.mufti@clm.com.pk
+                    lslegalconsultancy@gmail.com
                   </a>
                 </p>
               </div>
@@ -110,7 +100,7 @@ const Partners = () => {
               <div className="md:w-1/4 md:ml-6 mt-6 md:mt-0">
                 <img
                   src="/assets/profile.jpg" // Ensure the image is placed in the public/assets folder
-                  alt="Afzal H. Mufti"
+                  alt="Hafiz Muhammad Bilal Sharif Chaudhery"
                   className="w-32 h-40 object-cover rounded-md shadow-md"
                 />
               </div>

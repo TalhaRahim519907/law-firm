@@ -31,7 +31,7 @@ const AboutUs = () => {
             providing expert legal solutions. Our team of experienced
             professionals specializes in various legal fields, ensuring
             comprehensive support for our clients. With years of expertise and a
-            strong reputation in the legal industry, we are committed to
+            strong reputation in the legal fraternity, we are committed to
             delivering reliable and results-driven legal services. Our goal is
             to provide sound legal advice and strategic guidance to help our
             clients navigate complex legal matters with confidence and ease.
@@ -51,10 +51,10 @@ const AboutUs = () => {
           <p className="text-gray-700 text-justify">
             LS Legal Consultant and Associates was founded with a vision to
             provide unparalleled legal support. Over the years, we have expanded
-            our expertise in corporate, commercial, and litigation matters,
-            building a strong reputation in the industry. Our journey began with
-            a small team of dedicated professionals, and today, we stand as a
-            trusted name in legal consultancy. We continuously strive to deliver
+            our expertise in Civil, Criminal, Family, Tax matters, building a
+            strong reputation in the industry. Our journey began with a small
+            team of dedicated professionals, and today, we stand as a trusted
+            name in legal consultancy. We continuously strive to deliver
             strategic, innovative, and client-focused solutions.
           </p>
         </div>

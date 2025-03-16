@@ -9,11 +9,11 @@ import image6 from "../../assets/Images/Bg6.webp";
 const slides = [
   {
     image: image1,
-    text: "What sets LS Legal Consultant and Associates apart is its exceptional expertise in both contentious and non-contentious legal matters a rarity in the Pakistani legal industry. Unlike traditional law firms in the country, LS stays ahead by continuously updating itself and its team with the latest technological advancements in the legal sector.",
+    text: "What sets LS Legal Consultants and Associates apart is its exceptional expertise in both contentious and non-contentious legal matters a rarity in the Pakistani legal industry. Unlike traditional law firms in the country, LS stays ahead by continuously updating itself and its team with the latest technological advancements in the legal sector.",
   },
   {
     image: image2,
-    text: "LS Legal Consultant and Associates boasts a highly skilled and dedicated team that consistently goes above and beyond to support its clients. Their extensive knowledge and vast experience make them a trusted choice in Pakistan’s legal industry. They are not only well-informed but also courteous, making them a reliable business partner who always offers sound and strategic advice.",
+    text: "LS Legal Consultants and Associates boasts a highly skilled and dedicated team that consistently goes above and beyond to support its clients. Their extensive knowledge and vast experience make them a trusted choice in Pakistan’s legal industry. They are not only well-informed but also courteous, making them a reliable business partner who always offers sound and strategic advice.",
   },
   {
     image: image3,
@@ -25,11 +25,11 @@ const slides = [
   },
   {
     image: image5,
-    text: "LS Legal Consultant and Associates is renowned for advocating on behalf of both international and local clients in litigation before the Supreme and High Courts, while also possessing extensive expertise in arbitration.",
+    text: "LS Legal Consultants and Associates is renowned for advocating on behalf of both international and local clients in litigation before the Supreme and High Courts, while also possessing extensive expertise in arbitration.",
   },
   {
     image: image6,
-    text: "LS Legal Consultant and Associates is highly regarded for its expertise in joint ventures and commercial contract matters.",
+    text: "LS Legal Consultants and Associates is highly regarded for its expertise in joint ventures and commercial contract matters.",
   },
 ];
 

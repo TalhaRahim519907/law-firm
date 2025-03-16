@@ -25,8 +25,8 @@ const intro = () => {
         their circumstances.
       </p>
       <p className="text-justify">
-        Our firm offers a wide range of legal services, including corporate law,
-        litigation, intellectual property rights, and more. We aim to provide
+        Our firm offers a wide range of legal services, including Civil Law,
+        Criminal Law, Family Laws, Taxation and more. We aim to provide
         effective legal representation with professionalism and dedication. Our
         attorneys are well-versed in handling disputes, drafting legal
         documents, and offering regulatory compliance guidance.
