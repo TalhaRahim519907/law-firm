@@ -3,7 +3,7 @@ import { Menu, X } from "lucide-react";
 import { FaChevronDown } from "react-icons/fa";
 import { useNavigate } from "react-router-dom";
 import { imageData } from "../Expertise/Imagedata.jsx";
-// import logo from "../../assets/Images/LS2.png";
+// import Logo from "../../assets/Images/1.svg";
 
 const Navbar = () => {
   const navigate = useNavigate();
@@ -22,9 +22,16 @@ const Navbar = () => {
     <nav className="bg-[rgb(12,33,55)] text-white p-5 fixed w-full top-0 z-50">
       <div className="container mx-auto flex justify-between items-center">
         {/* Logo */}
-        <h1 className="text-2xl text-[rgb(213,179,84)] transition-colors duration-300 font-bold font-serif cursor-pointer">
-          LS LEGAL CONSULTANTS
+        <h1
+          className=" text-[rgb(213,179,84)] text-center transition-colors duration-300 font-serif cursor-pointer"
+          onClick={() => navigate("/")}
+        >
+          <span className="text-2xl font-bold">LS LEGAL</span> <br />{" "}
+          <span className="font-semibold">CONSULTANTS & ASSOCIATES</span>
         </h1>
+        {/* <h1 className="cursor-pointer" onClick={() => navigate("/")}>
+          <img src={Logo} alt="LS Legal Consultants Logo" className="" />
+        </h1> */}
         {/* <div className="cursor-pointer w-52" onClick={() => navigate("/")}>
           <img src={logo} alt="Logo" className="h-16 w-auto" />
         </div> */}
@@ -74,39 +81,9 @@ const Navbar = () => {
             className="group relative hover:text-[rgb(213,179,84)] font-bold font-serif transition-colors duration-300 cursor-pointer 
                  before:content-[''] before:absolute before:left-1/2 before:bottom-[-3px] before:w-0 before:h-[3px] 
                  before:bg-[rgb(213,179,84)] before:transition-all before:duration-300 hover:before:w-[20px] hover:before:translate-x-[-50%]"
-            onClick={() => navigate("/Edetail")}
           >
             Expertise
             {/* Dropdown Menu */}
-            {/* <ul className="absolute left-0 top-full mt-0 w-60 bg-[rgb(12,33,55)] shadow-lg opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-opacity duration-300">
-              <li
-                className="px-4 py-2 text-white text-sm font-normal hover:bg-[rgb(213,179,84)] cursor-pointer"
-                onClick={() => navigate(`/expertise/${image.id}`)}
-              >
-                Civil Litigation
-              </li>
-              <li className="px-4 py-2 text-white text-sm font-normal hover:bg-[rgb(213,179,84)] cursor-pointer">
-                Criminal Litigation
-              </li>
-              <li className="px-4 py-2 text-white text-sm font-normal hover:bg-[rgb(213,179,84)] cursor-pointer">
-                Family Laws
-              </li>
-              <li className="px-4 py-2 text-white text-sm font-normal hover:bg-[rgb(213,179,84)] cursor-pointer">
-                Consumer Laws
-              </li>
-              <li className="px-4 py-2 text-white text-sm font-normal hover:bg-[rgb(213,179,84)] cursor-pointer">
-                Banking & Finance
-              </li>
-              <li className="px-4 py-2 text-white text-sm font-normal hover:bg-[rgb(213,179,84)] cursor-pointer">
-                Income & Sales Tax
-              </li>
-              <li className="px-4 py-2 text-white text-sm font-normal hover:bg-[rgb(213,179,84)] cursor-pointer">
-                Trade Mark Registration
-              </li>
-              <li className="px-4 py-2 text-white text-sm font-normal hover:bg-[rgb(213,179,84)] cursor-pointer">
-                Company Registration (SECP)
-              </li>
-            </ul> */}
             <ul className="absolute left-0 top-full mt-0 w-60 bg-[rgb(12,33,55)] shadow-lg opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-opacity duration-300">
               {imageData.map((image) => (
                 <li
@@ -114,7 +91,7 @@ const Navbar = () => {
                   className="px-4 py-2 text-white text-sm font-normal hover:bg-[rgb(213,179,84)] cursor-pointer"
                   onClick={() => navigate(`/expertise/${image.id}`)}
                 >
-                  {image.title} {/* Now the correct title will be displayed */}
+                  {image.title}
                 </li>
               ))}
             </ul>

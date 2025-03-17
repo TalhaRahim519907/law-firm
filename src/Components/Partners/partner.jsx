@@ -1,9 +1,10 @@
 import image1 from "../../assets/Images/705.jpg";
 import Footer from "../Footer/footer.jsx";
+import image2 from "../../assets/Images/profile-pic.jpg";
 
 const partners = [
   {
-    name: "Hafiz Muhammad Bilal Sharif Chaudhery",
+    name: "Hafiz Muhammad Bilal Sharif Chaudhery ( Head of Firm )",
     details: ["Adv. High Court", "0300 8877755"],
   },
 ];
@@ -66,7 +67,7 @@ const Partners = () => {
                 </h2>
                 <ul className="list-disc pl-5 text-gray-700 mt-2 space-y-1">
                   <li>LL.M (UOL)</li>
-                  <li>B.A , L.L.B (PU)</li>
+                  <li>B.A , LL.B (PU)</li>
                   <li>Diploma in Taxation (PU)</li>
                   <li>Navigating Family Law (Alison UK)</li>
                 </ul>
@@ -99,9 +100,9 @@ const Partners = () => {
               {/* Right Section - Image */}
               <div className="md:w-1/4 md:ml-6 mt-6 md:mt-0">
                 <img
-                  src="/assets/profile.jpg" // Ensure the image is placed in the public/assets folder
+                  src={image2} // Ensure the image is placed in the public/assets folder
                   alt="Hafiz Muhammad Bilal Sharif Chaudhery"
-                  className="w-32 h-40 object-cover rounded-md shadow-md"
+                  className="w-52 h-72 object-cover rounded-md shadow-lg"
                 />
               </div>
             </div>

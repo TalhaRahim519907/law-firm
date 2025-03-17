@@ -1,6 +1,9 @@
 import { FaMapMarkerAlt, FaEnvelope, FaPhone } from "react-icons/fa";
+import { useNavigate } from "react-router-dom";
+import { imageData } from "../Expertise/Imagedata.jsx";
 
 const Footer = () => {
+  const navigate = useNavigate();
   return (
     <footer className="bg-[rgb(12,33,55)] text-white py-10 px-6">
       <div className="max-w-6xl mx-9 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
@@ -26,7 +29,7 @@ const Footer = () => {
           <h3 className="text-2xl font-semibold mb-2">RAWALPINDI OFFICE</h3>
           <div className="w-16 h-1 bg-[rgb(213,179,84)] mt-2 mb-6"></div>
           <p className="flex items-center gap-2 mb-4">
-            <FaMapMarkerAlt size={20} color="rgb(213,179,84)" />
+            <FaMapMarkerAlt size={25} color="rgb(213,179,84)" />
             310 , 2nd Floor , Sardar Ijaz Ishaq Khan Block District Courts
             Rawalpindi
           </p>
@@ -61,21 +64,14 @@ const Footer = () => {
           <h3 className="text-lg font-semibold mb-2">Our Expertise</h3>
           <div className="w-16 h-1 bg-[rgb(213,179,84)] mt-2 mb-6"></div>
           <ul>
-            {[
-              "Civil litigation",
-              "Criminal Litigation",
-              "Family Laws",
-              "Consumer Laws",
-              "Banking & Finance",
-              "Income & Sales Tax",
-              "Trade Mark Registration",
-              "Company Registration (SECP)",
-            ].map((item, index) => (
+            {imageData.map((image) => (
               <li
-                key={index}
+                key={image.id}
                 className="flex items-center gap-2 mb-2 cursor-pointer hover:text-[rgb(213,179,84)]"
+                onClick={() => navigate(`/expertise/${image.id}`)}
               >
-                <span style={{ color: "rgb(213,179,84)" }}>&gt;</span> {item}
+                <span style={{ color: "rgb(213,179,84)" }}>&gt;</span>{" "}
+                {image.title}
               </li>
             ))}
           </ul>
