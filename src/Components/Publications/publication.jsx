@@ -32,33 +32,39 @@ const Publications = () => {
 
           {/* Book Info */}
           <div className="flex-1">
-            <h2 className="text-3xl font-bold font-sans text-[rgb(12,33,55)] mb-2">
-              Justice A.R. Cornelius - A Constitutionalist
+            <h2 className="text-3xl font-bold font-sans text-[rgb(12,33,55)] mb-4">
+              A History of the Judiciary in Pakistan
             </h2>
-            <p className="text-gray-700  leading-relaxed">
-              On the 30th death anniversary of Justice (Retd.) Alvin Robert
-              Cornelius, a former Chief Justice of Pakistan and a former Senior
-              Partner of CLM, a book titled{" "}
-              <strong>“Justice A.R. Cornelius - A Constitutionalist”</strong>{" "}
-              has been published to commemorate his life and legacy. It contains
-              personal reflections by people who knew and learned from Cornelius
-              in his lifetime; essays and articles by academics and scholars and
-              select speeches and writings by Cornelius (some previously
-              unpublished).
+            <p className="text-gray-700  leading-relaxed text-justify">
+              Hamid Khan, Senior Advocate, Supreme Court of Pakistan Hamid Khan
+              is a Senior Advocate of the Supreme Court of Pakistan and a
+              founding partner of a leading law firm of Pakistan, Cornelius,
+              Lane & Mufti. He is former President of the Supreme Court Bar
+              Association of Pakistan (20013), and of the Lahore High Court Bar
+              Association (19923). He regularly lectures on various legal
+              subjects at the University of the Punjab, Civil Services Academy,
+              Administrative Staff College, and the National Institute of Public
+              Administration. He is an Ebert and DAAD Fellow, and a member of
+              The Hague Academy of International Law. His other publications
+              include: Constitutional and Political History of Pakistan, 3rd
+              Edition (OUP 2017), Principles of Administrative Law, 2nd Edition
+              (OUP 2020), The Islamic Law of Inheritance, 2nd Edition (OUP
+              2021), and Comparative Constitutional Law (OUP 2022).
             </p>
 
             <div className="mt-4 text-gray-800 ">
               <p>
-                <strong>Editors:</strong> Asad Ullah Khan and Amna Umar Khan
+                <strong>Editors: </strong> Hamid Khan
               </p>
               <p>
-                <strong>Publication Date:</strong> December 2021
+                <strong>Publication Date: </strong>
+                26-Feb-2024
               </p>
               <p>
-                <strong>ISBN:</strong> 9789696641483
+                <strong>ISBN: </strong> 9789697342242
               </p>
               <p>
-                <strong>Publisher:</strong> Jahangir’s World Times Publications
+                <strong>Publisher: </strong> Oxford University Press
               </p>
             </div>
           </div>

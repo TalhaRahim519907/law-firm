@@ -19,7 +19,7 @@ const Navbar = () => {
   };
 
   return (
-    <nav className="bg-[rgb(12,33,55)] text-white p-5 fixed w-full top-0 z-50">
+    <nav className="bg-[rgb(12,33,55)] text-white p-3 fixed w-full top-0 z-50">
       <div className="container mx-auto flex justify-between items-center">
         {/* Logo */}
         <h1
@@ -29,12 +29,6 @@ const Navbar = () => {
           <span className="text-2xl font-bold">LS LEGAL</span> <br />{" "}
           <span className="font-semibold">CONSULTANTS & ASSOCIATES</span>
         </h1>
-        {/* <h1 className="cursor-pointer" onClick={() => navigate("/")}>
-          <img src={Logo} alt="LS Legal Consultants Logo" className="" />
-        </h1> */}
-        {/* <div className="cursor-pointer w-52" onClick={() => navigate("/")}>
-          <img src={logo} alt="Logo" className="h-16 w-auto" />
-        </div> */}
 
         {/* Desktop Menu */}
         <ul className="hidden md:flex space-x-6">
