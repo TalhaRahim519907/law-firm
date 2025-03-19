@@ -75,7 +75,7 @@ const Partners = () => {
                 <h2 className="text-xl font-semibold text-gray-900 mt-6">
                   Expertise
                 </h2>
-                <p className="text-gray-700 mt-2">
+                <p className="text-gray-700 mt-2 text-justify">
                   Meet the distinguished Owner of our law firm, who brings
                   decades of experience and expertise to the table. His
                   strategic vision and Leadership have established our firm as a

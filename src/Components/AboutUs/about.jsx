@@ -49,7 +49,7 @@ const AboutUs = () => {
           <h2 className="text-3xl font-bold mb-3">Evolution of the Firm</h2>
           <div className="w-16 h-1 bg-yellow-500 mb-4"></div>
           <p className="text-gray-700 text-justify">
-            LS Legal Consultant and Associates was founded with a vision to
+            LS Legal Consultants and Associates was founded with a vision to
             provide unparalleled legal support. Over the years, we have expanded
             our expertise in Civil, Criminal, Family, Tax matters, building a
             strong reputation in the industry. Our journey began with a small
