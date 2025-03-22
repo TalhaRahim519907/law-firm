@@ -3,7 +3,7 @@ import { Menu, X } from "lucide-react";
 import { FaChevronDown } from "react-icons/fa";
 import { useNavigate } from "react-router-dom";
 import { imageData } from "../Expertise/Imagedata.jsx";
-import logo from "../../assets/Images/logo3.png";
+import logo from "../../assets/Images/logo6.png";
 
 const Navbar = () => {
   const navigate = useNavigate();
@@ -19,7 +19,7 @@ const Navbar = () => {
   };
 
   return (
-    <nav className="bg-[rgb(12,33,55)] text-white p-1 fixed w-full top-0 z-50">
+    <nav className="bg-[rgb(12,33,55)] text-white p-3 fixed w-full top-0 z-50">
       <div className="container mx-auto flex justify-between items-center">
         {/* Logo */}
         <h1
@@ -28,7 +28,7 @@ const Navbar = () => {
         >
           {/* <span className="text-2xl font-bold">LS LEGAL</span> <br />{" "}
           <span className="font-semibold">CONSULTANTS & ASSOCIATES</span> */}
-          <img src={logo} alt="" className="h-20 w-64" />
+          <img src={logo} alt="" className="h-14 w-64" />
         </h1>
 
         {/* Desktop Menu */}
