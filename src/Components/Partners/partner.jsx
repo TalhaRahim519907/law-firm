@@ -82,8 +82,8 @@ const Partners = () => {
                   trusted and respected name in the Legal Industry. He holds
                   ample experience civil litigation , criminal litigation ,
                   family matters, drafting and arbitration. However if you need
-                  assistance civil matters, criminal matters, family matters etc
-                  you must contact him.
+                  assistance civil matters, criminal matters, family matters
+                  etc. you must contact him.
                 </p>
 
                 <p className="mt-6 text-gray-900 font-semibold">

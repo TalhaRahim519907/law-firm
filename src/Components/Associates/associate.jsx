@@ -7,7 +7,7 @@ const associates = [
     details: ["Adv. High Court", "0300 8877755"],
   },
   {
-    name: "M. Ahsan Majid",
+    name: "M. Ahsan Majid CH.",
     details: ["Adv. High Court", "0323 7716445"],
   },
   {
@@ -52,7 +52,7 @@ const Associates = () => {
       >
         <div className="absolute inset-0 bg-black bg-opacity-50 flex items-center p-8">
           <h2 className="text-4xl font-bold font-serif">
-            LS Consultant Associates
+            LS Consultants Associates
           </h2>
         </div>
       </div>

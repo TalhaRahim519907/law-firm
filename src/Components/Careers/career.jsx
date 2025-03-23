@@ -47,7 +47,7 @@ const Careers = () => {
             JOIN US
           </h2>
           <h3 className="text-center text-2xl font-bold text-[rgb(12,33,55)] mb-6">
-            Associate & Internship
+            Associates & Internship
           </h3>
 
           <form onSubmit={handleSubmit} className="space-y-4">

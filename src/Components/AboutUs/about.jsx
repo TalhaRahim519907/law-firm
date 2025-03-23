@@ -21,9 +21,9 @@ const AboutUs = () => {
 
       <div className="container mx-auto pb-4 pt-12 flex flex-col md:flex-row items-center">
         {/* Text Section on the left */}
-        <div className="md:w-1/2 md:pl-8">
+        <div className="p-3 md:w-1/2 md:pl-8">
           <h2 className="text-3xl font-bold mb-4">
-            Introduction to LS Legal Consultant & Associates
+            Introduction to LS Legal Consultants & Associates
           </h2>
           <div className="w-16 h-1 bg-yellow-500 mb-4"></div>
           <p className="text-gray-700 text-justify">

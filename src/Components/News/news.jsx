@@ -47,7 +47,7 @@ const NewsEvents = () => {
           </h2>
         </div>
       </div>
-      <div className="max-w-6xl mx-auto py-12 px-0">
+      <div className="max-w-6xl mx-auto py-12 px-3">
         {/* Image Slider */}
         <div className="relative">
           <img
@@ -76,19 +76,19 @@ const NewsEvents = () => {
             Latest News
           </h2>
           <div className="w-16 h-1 bg-yellow-500 mb-4 mt-2"></div>
-          <p className="text-gray-700 mt-4">
+          <p className="text-gray-700 mt-4 text-justify">
             Our latest updates bring you in-depth insights on industry trends,
             legal advancements, and the most significant highlights from our
             firm. We aim to keep you updated on the latest events shaping the
             business and legal landscape.
           </p>
-          <p className="text-gray-700 mt-4">
+          <p className="text-gray-700 mt-4 text-justify">
             Stay ahead with our expert opinions, case studies, and market
             analyses. Our team works tirelessly to bring you critical
             information that impacts businesses and individuals, ensuring you
             stay informed and prepared.
           </p>
-          <p className="text-gray-700 mt-4">
+          <p className="text-gray-700 mt-4 text-justify">
             We take pride in our success stories, recent achievements, and case
             resolutions. With a strong commitment to excellence, we continuously
             strive to set new standards and deliver the best outcomes for our
